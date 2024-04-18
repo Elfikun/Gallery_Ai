@@ -48,7 +48,7 @@ body {
 	will-change: transform;
 }
 .gallery__item:hover {
-	transform: scale(1.03);
+	transform: scale(1.2);
 }
 .gallery__item img {
 	width: 100%;
