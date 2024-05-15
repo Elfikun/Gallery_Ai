@@ -3,7 +3,7 @@ window.onload = function () {
 
 		document.body.classList.add('loaded')
 
-		if (window.matchMedia('(max-width: 991px)').matches) {
+		if (window.matchMedia('(min-width: 424px)').matches) {
 
 			Draggable.create('.gallery', {
 				bounds: 'body',

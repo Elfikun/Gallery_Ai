@@ -69,18 +69,4 @@ body {
 		filter: invert(100%);
 	}
 }
-@media (max-width: 767px) {
-	.gallery {
-		width: 100%;
-		display: block; /* Изменяем отображение галереи на блочное */
-	}
 
-	.gallery__item {
-		margin-bottom: var(--gap); /* Убираем отступ между изображениями */
-		transform: none; /* Отключаем масштабирование для мобильных устройств */
-	}
-
-	.gallery__item img {
-		width: 100%; /* Адаптивная ширина для изображений */
-	}
-}
