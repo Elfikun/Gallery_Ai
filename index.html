@@ -1,144 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Gallary Ai</title>
-		<link rel="stylesheet" href="libs/PhotoSwipe/photoswipe.css" />
-		<link rel="stylesheet" href="css/main.css" />
-		<script src="libs/gsap.min.js" defer></script>
-		<script src="libs/Draggable.min.js" defer></script>
-		<script src="libs/InertiaPlugin.min.js" defer></script>
-		<script src="js/app.js" type="module" defer></script>
-		
-		<style>
-			.gallery {opacity: 0;}
-		</style>
-	</head>
-	<body>
-		<h1 class="header">Elfikun Ai <span>loading...</span></h1>
-		<div class="gallery">
-			<a href="img/1.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/1.png" alt="Alt" /></a>
-			<a href="img/2.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/2.png" alt="Alt" /></a>
-			<a href="img/3.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/3.png" alt="Alt" /></a>
-			<a href="img/4.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/4.png" alt="Alt" /></a>
-			<a href="img/5.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/5.png" alt="Alt" /></a>
-			<a href="img/6.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/6.png" alt="Alt" /></a>
-			<a href="img/7.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/7.png" alt="Alt" /></a>
-			<a href="img/8.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/8.png" alt="Alt" /></a>
-			<a href="img/9.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/9.png" alt="Alt" /></a>
-			<a href="img/10.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/10.png" alt="Alt" /></a>
-			<a href="img/11.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/11.png" alt="Alt" /></a>
-			<a href="img/12.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/12.png" alt="Alt" /></a>
-			<a href="img/13.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/13.png" alt="Alt" /></a>
-			<a href="img/14.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/14.png" alt="Alt" /></a>
-			<a href="img/15.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/15.png" alt="Alt" /></a>
-			<a href="img/16.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/16.png" alt="Alt" /></a>
-			<a href="img/17.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/17.png" alt="Alt" /></a>
-			<a href="img/18.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/18.png" alt="Alt" /></a>
-			<a href="img/19.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/19.png" alt="Alt" /></a>
-			<a href="img/20.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/20.png" alt="Alt" /></a>
-			<a href="img/21.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/21.png" alt="Alt" /></a>
-			<a href="img/22.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/22.png" alt="Alt" /></a>
-			<a href="img/23.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/23.png" alt="Alt" /></a>
-			<a href="img/24.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/24.png" alt="Alt" /></a>
-			<a href="img/25.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/25.png" alt="Alt" /></a>
-			<a href="img/26.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/26.png" alt="Alt" /></a>
-			<a href="img/27.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/27.png" alt="Alt" /></a>
-			<a href="img/28.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/28.png" alt="Alt" /></a>
-			<a href="img/29.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/29.png" alt="Alt" /></a>
-			<a href="img/30.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/30.png" alt="Alt" /></a>
-			<a href="img/31.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/31.png" alt="Alt" /></a>
-			<a href="img/32.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/32.png" alt="Alt" /></a>
-			<a href="img/33.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/33.png" alt="Alt" /></a>
-			<a href="img/34.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/34.png" alt="Alt" /></a>
-			<a href="img/35.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/35.png" alt="Alt" /></a>
-			<a href="img/36.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/36.png" alt="Alt" /></a>
-			<a href="img/37.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/37.png" alt="Alt" /></a>
-			<a href="img/38.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/38.png" alt="Alt" /></a>
-			<a href="img/39.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/39.png" alt="Alt" /></a>
-			<a href="img/40.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/40.png" alt="Alt" /></a>
-			<a href="img/1.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/1.png"
-					alt="Alt" /></a>
-			<a href="img/2.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/2.png"
-					alt="Alt" /></a>
-			<a href="img/3.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/3.png"
-					alt="Alt" /></a>
-			<a href="img/4.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/4.png"
-					alt="Alt" /></a>
-			<a href="img/5.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/5.png"
-					alt="Alt" /></a>
-			<a href="img/6.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/6.png"
-					alt="Alt" /></a>
-			<a href="img/7.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/7.png"
-					alt="Alt" /></a>
-			<a href="img/8.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/8.png"
-					alt="Alt" /></a>
-			<a href="img/9.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/9.png"
-					alt="Alt" /></a>
-			<a href="img/10.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/10.png"
-					alt="Alt" /></a>
-			<a href="img/11.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/11.png"
-					alt="Alt" /></a>
-			<a href="img/12.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/12.png"
-					alt="Alt" /></a>
-			<a href="img/13.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/13.png"
-					alt="Alt" /></a>
-			<a href="img/14.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/14.png"
-					alt="Alt" /></a>
-			<a href="img/15.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/15.png"
-					alt="Alt" /></a>
-			<a href="img/16.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/16.png"
-					alt="Alt" /></a>
-			<a href="img/17.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/17.png"
-					alt="Alt" /></a>
-			<a href="img/18.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/18.png"
-					alt="Alt" /></a>
-			<a href="img/19.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/19.png"
-					alt="Alt" /></a>
-			<a href="img/20.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/20.png"
-					alt="Alt" /></a>
-			<a href="img/21.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/21.png"
-					alt="Alt" /></a>
-			<a href="img/22.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/22.png"
-					alt="Alt" /></a>
-			<a href="img/23.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/23.png"
-					alt="Alt" /></a>
-			<a href="img/24.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/24.png"
-					alt="Alt" /></a>
-			<a href="img/25.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/25.png"
-					alt="Alt" /></a>
-			<a href="img/26.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/26.png"
-					alt="Alt" /></a>
-			<a href="img/27.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/27.png"
-					alt="Alt" /></a>
-			<a href="img/28.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/28.png"
-					alt="Alt" /></a>
-			<a href="img/29.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/29.png"
-					alt="Alt" /></a>
-			<a href="img/30.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/30.png"
-					alt="Alt" /></a>
-			<a href="img/31.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/31.png"
-					alt="Alt" /></a>
-			<a href="img/32.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/32.png"
-					alt="Alt" /></a>
-			<a href="img/33.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/33.png"
-					alt="Alt" /></a>
-			<a href="img/34.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/34.png"
-					alt="Alt" /></a>
-			<a href="img/35.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/35.png"
-					alt="Alt" /></a>
-			<a href="img/36.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/36.png"
-					alt="Alt" /></a>
-			<a href="img/37.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/37.png"
-					alt="Alt" /></a>
-			<a href="img/38.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/38.png"
-					alt="Alt" /></a>
-			<a href="img/39.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/39.png"
-					alt="Alt" /></a>
-			<a href="img/40.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/40.png"
-					alt="Alt" /></a>
-		</div>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Gallary Ai</title>
+	<link rel="stylesheet" href="libs/PhotoSwipe/photoswipe.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="libs/gsap.min.js" defer></script>
+	<script src="libs/Draggable.min.js" defer></script>
+	<script src="libs/InertiaPlugin.min.js" defer></script>
+	<script src="js/app.js" type="module" defer></script>
+
+	<style>
+		.gallery {
+			opacity: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="header">Elfikun Ai <span>loading...</span></h1>
+	<div class="gallery">
+		<a href="img/1.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/1.png"
+				alt="Alt" /></a>
+		<a href="img/2.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/2.png"
+				alt="Alt" /></a>
+		<a href="img/3.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/3.png"
+				alt="Alt" /></a>
+		<a href="img/4.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/4.png"
+				alt="Alt" /></a>
+		<a href="img/5.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/5.png"
+				alt="Alt" /></a>
+		<a href="img/6.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/6.png"
+				alt="Alt" /></a>
+		<a href="img/7.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/7.png"
+				alt="Alt" /></a>
+		<a href="img/8.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/8.png"
+				alt="Alt" /></a>
+		<a href="img/9.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/9.png"
+				alt="Alt" /></a>
+		<a href="img/10.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/10.png"
+				alt="Alt" /></a>
+		<a href="img/11.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/11.png"
+				alt="Alt" /></a>
+		<a href="img/12.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/12.png"
+				alt="Alt" /></a>
+		<a href="img/13.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/13.png"
+				alt="Alt" /></a>
+		<a href="img/14.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/14.png"
+				alt="Alt" /></a>
+		<a href="img/15.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/15.png"
+				alt="Alt" /></a>
+		<a href="img/16.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/16.png"
+				alt="Alt" /></a>
+		<a href="img/17.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/17.png"
+				alt="Alt" /></a>
+		<a href="img/18.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/18.png"
+				alt="Alt" /></a>
+		<a href="img/19.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/19.png"
+				alt="Alt" /></a>
+		<a href="img/20.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/20.png"
+				alt="Alt" /></a>
+		<a href="img/21.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/21.png"
+				alt="Alt" /></a>
+		<a href="img/22.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/22.png"
+				alt="Alt" /></a>
+		<a href="img/23.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/23.png"
+				alt="Alt" /></a>
+		<a href="img/24.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/24.png"
+				alt="Alt" /></a>
+		<a href="img/25.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/25.png"
+				alt="Alt" /></a>
+		<a href="img/26.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/26.png"
+				alt="Alt" /></a>
+		<a href="img/27.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/27.png"
+				alt="Alt" /></a>
+		<a href="img/28.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/28.png"
+				alt="Alt" /></a>
+		<a href="img/29.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/29.png"
+				alt="Alt" /></a>
+		<a href="img/30.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/30.png"
+				alt="Alt" /></a>
+		<a href="img/31.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/31.png"
+				alt="Alt" /></a>
+		<a href="img/32.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/32.png"
+				alt="Alt" /></a>
+		<a href="img/33.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/33.png"
+				alt="Alt" /></a>
+		<a href="img/34.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/34.png"
+				alt="Alt" /></a>
+		<a href="img/35.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/35.png"
+				alt="Alt" /></a>
+		<a href="img/36.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/36.png"
+				alt="Alt" /></a>
+		<a href="img/37.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/37.png"
+				alt="Alt" /></a>
+		<a href="img/38.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/38.png"
+				alt="Alt" /></a>
+		<a href="img/39.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/39.png"
+				alt="Alt" /></a>
+		<a href="img/40.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/40.png"
+				alt="Alt" /></a>
+		<a href="img/41.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/41.png"
+				alt="Alt" /></a>
+		<a href="img/42.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/42.png"
+				alt="Alt" /></a>
+		<a href="img/43.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/43.png"
+				alt="Alt" /></a>
+		<a href="img/44.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/44.png"
+				alt="Alt" /></a>
+		<a href="img/45.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/45.png"
+				alt="Alt" /></a>
+		<a href="img/46.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/46.png"
+				alt="Alt" /></a>
+		<a href="img/47.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/47.png"
+				alt="Alt" /></a>
+		<a href="img/48.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/48.png"
+				alt="Alt" /></a>
+		<a href="img/49.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/49.png"
+				alt="Alt" /></a>
+		<a href="img/50.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/50.png"
+				alt="Alt" /></a>
+		<a href="img/1.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/1.png"
+				alt="Alt" /></a>
+		<a href="img/2.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/2.png"
+				alt="Alt" /></a>
+		<a href="img/3.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/3.png"
+				alt="Alt" /></a>
+		<a href="img/4.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/4.png"
+				alt="Alt" /></a>
+		<a href="img/5.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/5.png"
+				alt="Alt" /></a>
+		<a href="img/6.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/6.png"
+				alt="Alt" /></a>
+		<a href="img/7.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/7.png"
+				alt="Alt" /></a>
+		<a href="img/8.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/8.png"
+				alt="Alt" /></a>
+		<a href="img/9.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/9.png"
+				alt="Alt" /></a>
+		<a href="img/10.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/10.png"
+				alt="Alt" /></a>
+		<a href="img/11.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/11.png"
+				alt="Alt" /></a>
+		<a href="img/12.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/12.png"
+				alt="Alt" /></a>
+		<a href="img/13.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/13.png"
+				alt="Alt" /></a>
+		<a href="img/14.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/14.png"
+				alt="Alt" /></a>
+		<a href="img/15.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/15.png"
+				alt="Alt" /></a>
+		<a href="img/16.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/16.png"
+				alt="Alt" /></a>
+		<a href="img/17.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/17.png"
+				alt="Alt" /></a>
+		<a href="img/18.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/18.png"
+				alt="Alt" /></a>
+		<a href="img/19.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/19.png"
+				alt="Alt" /></a>
+		<a href="img/20.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/20.png"
+				alt="Alt" /></a>
+		<a href="img/21.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/21.png"
+				alt="Alt" /></a>
+		<a href="img/22.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/22.png"
+				alt="Alt" /></a>
+		<a href="img/23.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/23.png"
+				alt="Alt" /></a>
+		<a href="img/24.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/24.png"
+				alt="Alt" /></a>
+		<a href="img/25.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/25.png"
+				alt="Alt" /></a>
+		<a href="img/26.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/26.png"
+				alt="Alt" /></a>
+		<a href="img/27.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/27.png"
+				alt="Alt" /></a>
+		<a href="img/28.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/28.png"
+				alt="Alt" /></a>
+		<a href="img/29.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/29.png"
+				alt="Alt" /></a>
+		<a href="img/30.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/30.png"
+				alt="Alt" /></a>
+		<a href="img/31.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/31.png"
+				alt="Alt" /></a>
+		<a href="img/32.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/32.png"
+				alt="Alt" /></a>
+		<a href="img/33.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/33.png"
+				alt="Alt" /></a>
+		<a href="img/34.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/34.png"
+				alt="Alt" /></a>
+		<a href="img/35.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/35.png"
+				alt="Alt" /></a>
+		<a href="img/36.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/36.png"
+				alt="Alt" /></a>
+		<a href="img/37.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/37.png"
+				alt="Alt" /></a>
+		<a href="img/38.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/38.png"
+				alt="Alt" /></a>
+		<a href="img/39.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/39.png"
+				alt="Alt" /></a>
+		<a href="img/40.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/40.png"
+				alt="Alt" /></a>
+		<a href="img/40.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/40.png"
+				alt="Alt" /></a>
+		<a href="img/41.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/41.png"
+				alt="Alt" /></a>
+		<a href="img/42.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/42.png"
+				alt="Alt" /></a>
+		<a href="img/43.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/43.png"
+				alt="Alt" /></a>
+		<a href="img/44.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/44.png"
+				alt="Alt" /></a>
+		<a href="img/45.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/45.png"
+				alt="Alt" /></a>
+		<a href="img/46.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/46.png"
+				alt="Alt" /></a>
+		<a href="img/47.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/47.png"
+				alt="Alt" /></a>
+		<a href="img/48.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/48.png"
+				alt="Alt" /></a>
+		<a href="img/49.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/49.png"
+				alt="Alt" /></a>
+		<a href="img/50.png" data-pswp-width="1500" data-pswp-height="2500" class="gallery__item"><img src="img/50.png"
+				alt="Alt" /></a>
+	</div>
+</body>
+
 </html>
