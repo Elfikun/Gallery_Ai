@@ -42,6 +42,7 @@ body {
 	transition: 1s cubic-bezier(0.075, 1, 0.25, 1), opacity 1s;
 }
 .gallery__item {
+	display: block;
 	margin-bottom: var(--gap);
 	transform: scale(1.001);
 	transition: 0.3s;
@@ -70,3 +71,7 @@ body {
 	}
 }
 
+body .pswp .pswp__container {
+	transition: transform .5s ease-out;
+	transition: transform 1s cubic-bezier(.3, 0, 0, 1);
+}
